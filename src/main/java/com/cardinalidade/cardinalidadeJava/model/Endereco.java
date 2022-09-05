@@ -17,7 +17,7 @@ public class Endereco implements Serializable {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer codigo;
 
-    private String lagadouro;
+    private String logradouro;
     @ManyToOne
     @JoinColumn(name="cliente_id", referencedColumnName = "codigo")//Varios endereços um cliente
     private Cliente cliente;

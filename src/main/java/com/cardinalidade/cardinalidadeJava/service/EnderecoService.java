@@ -1,6 +1,5 @@
 package com.cardinalidade.cardinalidadeJava.service;
 
-import com.cardinalidade.cardinalidadeJava.model.Cliente;
 import com.cardinalidade.cardinalidadeJava.model.Endereco;
 import com.cardinalidade.cardinalidadeJava.repositories.EnderecoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,14 +24,14 @@ public class EnderecoService {
 
     public Endereco cadastrar(Endereco endereco){
        endereco.getCodigo();
-       endereco.getLagadouro();
+       endereco.getLogradouro();
        endereco.getCliente();
         return enderecoRepository.save(endereco);
     }
 
     public Endereco alterar(Endereco endereco){
         endereco.getCodigo();
-        endereco.getLagadouro();
+        endereco.getLogradouro();
         endereco.getCliente();
 
         return enderecoRepository.save(endereco);
