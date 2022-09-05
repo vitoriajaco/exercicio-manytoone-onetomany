@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -25,8 +26,8 @@ public class EstadoModel implements Serializable {
 
 
     @JsonIgnore
-    @OneToMany(mappedBy = "estado", cascade=CascadeType.ALL)
-    private List<EstadoModel> estadoModels;
+    @OneToMany(mappedBy = "estadoModel", cascade=CascadeType.ALL)
+    private List<CidadeModel> cidadeModels = new ArrayList<>();
 
 }
 

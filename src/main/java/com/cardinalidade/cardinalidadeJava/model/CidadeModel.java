@@ -22,7 +22,7 @@ public class CidadeModel implements Serializable {
     private String cidade;
 
     @ManyToOne
-    @JoinColumn(name = "cidade_id", referencedColumnName = "codigo")
-    private CidadeModel cidadeModel;
+    @JoinColumn(name = "estados_id", referencedColumnName = "codigo")
+    private EstadoModel estadoModel;
 
 }
