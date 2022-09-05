@@ -1,4 +1,7 @@
 package com.cardinalidade.cardinalidadeJava.repositories;
 
-public interface CidadeRepository {
+import com.cardinalidade.cardinalidadeJava.model.CidadeModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CidadeRepository extends JpaRepository<CidadeModel, Long> {
 }
